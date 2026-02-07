@@ -19,6 +19,16 @@ function replace_link(md) {
 
 export default defineConfig({
     title: 'go2rtc',
+    description: 'Ultimate camera streaming application',
+    head: [
+        ['meta', { property: 'og:title', content: 'go2rtc' }],
+        ['meta', { property: 'og:description', content: 'Ultimate camera streaming application' }],
+        ['meta', { property: 'og:url', content: 'https://go2rtc.org/' }],
+        ['meta', { property: 'og:image', content: 'https://go2rtc.org/images/logo.png' }],
+        ['meta', { property: 'og:type', content: 'website' }],
+        ['meta', { property: 'og:site_name', content: 'go2rtc' }],
+    ],
+
     themeConfig: {
         nav: [
             {text: 'Home', link: '/'},
